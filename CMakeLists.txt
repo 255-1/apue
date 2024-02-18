@@ -1,10 +1,8 @@
 project(apue)
+set(CMAKE_C_CSTANDARD)
 
-set(CMAKE_C_STANDARD)
-
-add_executable(myls chapter1/myls.c)
-add_executable(copy_in2out chapter1/copy_in2out.c)
-add_executable(pid chapter1/pid.c)
-add_executable(myshell chapter1/myshell.c)
-add_executable(err chapter1/err.c)
-add_executable(sig chapter1/sig.c)
+add_executable(main main.c)
+add_executable(lseek_test chapter3/lseek_test.c)
+add_executable(test_stat chapter4/test_stat.c)
+add_executable(nftw chapter4/nftw.c)
+add_executable(test_tmpnam chapter5/test_tmpnam.c)
